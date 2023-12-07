@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartography of Male Fantasy</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+  <div class="image-container">
+    <img src="Nyogogashima_女護島_(Island_of_Women)_(BM_OA+,0.139_08).jpg" alt="Sample" width="100%" height="auto">
+    <div class="centered-title">Island of Women</div>
+    <div class="title-description">-Cartography of Male Fantasy-</div>
+  </div>
+
+  <div class="menu-bar">
+    <a href="javascript:void(0);" onclick="showSection('about')">About</a>
+    <a href="javascript:void(0);" onclick="showSection('map')">Map</a>
+    <a href="javascript:void(0);" onclick="showSection('gallery')">Gallery</a>
+    <a href="javascript:void(0);" onclick="showSection('documentation')">Documentation</a>
+    <a href="javascript:void(0);" onclick="showSection('research')">Research</a>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="content-section">
+    <h1>About the project</h1>
+    <p>In medieval Japanese Buddhism, the "Island of Women" presents a unique intersection of narrative, geography, and
+      gender politics. This mystical island, often portrayed as an exotic, perilous, yet alluring realm, has long been a
+      simultaneous representation of male fantasy and fear — it is inhabited exclusively by women, some of whom are
+      sexually seductive at first but later becomes fatal. Stemming from the famous Buddhist setsuwa Konjaku Monogatari
+      Shu, its textual ground narrates a story surrounding attachment and attainment, reminding people that the female,
+      with their sexual potential, are obstructions on the road of enlightenment, and one can get attained only by
+      withdrawing from pleasures of the world. The message is yet not only communicated by texts: this island, as a
+      geographical entity, also frequently appeared on medieval maps, at the time when cartography was largely a
+      Buddhist matter. It is always designed to be on the periphery of the map, delineating Japanese territory and the
+      rest of the world, as well as implying the transgression from the world to the heavenly state. The Island of
+      Women, as such, serves as a liminal space by many means, subtly yet everlastingly delivering the quintessential
+      lesson of Buddhism.
+      <br><br>
+      D. Max Moerman, with his Demonology and Eroticism published in 2009, has completed a rather in-depth study on
+      historical cartographies of the Island of Women. He identifies the island as "a conflicted site of desire and
+      denial, of anxiety and alterity: a realm where the boundaries of religion and sexuality were encountered and
+      explored. It lay forever at the margins of the known world, marking the furthest edge of cultural identity." It is
+      rather dynamic, and has changed geographically and semantically over past centuries. While a wide range of maps
+      are discussed and displayed to exemplify this idea throughout Moerman's work, he is, apparently, not able to give
+      an exhaustive exhibition of them within 20-ish pages. Together with other issues such as the inaccessibility of
+      certain age-old maps, the panorama of the Island of Women seems to remain ambiguous, and the narrative is still
+      discursive.
+      <br><br>
+      My goal is, of course, not to challenge Moerman's intelligent studies. Rather, this website is inspired by, and
+      developed upon his work, especially on his argument about "how cartography might be understood as a form of
+      fiction". By collecting whatever cultural resources on the Island of Women here, this website endeavors to
+      demonstrate 1) the intertextuality between map and literature, 2) how cartography, as a narrative device, can
+      communicate cultural, moral, and religious messages. It is also hoped to expand understandings of the Island of
+      Women beyond the Japanese context — there are much more similar constructions in other cultures worldwide,
+      upholding somehow similar stories and intentions. Just like the title informed, it is not a study of cartography
+      of the Island of Women, but cartography of male fantasy.
+    </p>
+  </div>
+
+  <!-- Map Section -->
+  <div id="map" class="content-section">
+    <h1>Interactive Map</h1>
+    <iframe src="https://www.arcgis.com/apps/instant/sidebar/index.html?appid=1f3acf9d391e43ed8d35c9349f362d01"
+      width="1200" height="800" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this
+      page.</iframe>
+  </div>
+
+  <!-- Gallery Section -->
+  <div id="gallery" class="content-section">
+    <h1>Gallery</h1>
+    <div class="image-displayer">
+      <!-- Arrows  within the bounds of the .image-displayer -->
+      <button class="arrow left-arrow" onclick="shiftImage(-1)">❮</button>
+      <div class="image-container-gallery">
+        <img id="gallery-image" src="1305-maps of japan.jpg" alt="Gallery Image">
+        <div id="image-text" class="image-text">
+          <h2 id="image-title" class="image-title">Gyōkizu 行基図(1305)</h2>
+          <p id="image-description" class="image-description">Name of this map attributes to the legendary Nara-period
+            monk, and belongs to the Shingon-Ritsu temple Shōmyōji 称名寺. However, it is incomplete.</p>
+        </div>
+      </div>
+      <button class="arrow right-arrow" onclick="shiftImage(1)">❯</button>
+    </div>
+  </div>
+
+
+  </div>
+
+  <div id="documentation" class="content-section">
+    <h1>Documentation</h1>
+    <p style="font-size: larger;">
+      [Map]
+    </p>
+
+    <p>
+      <b>Map of Japan, Shomyoji Collection</b><br>
+      Women flourish here, those who come here never return. 女人華来 人不還.<br><br>
+
+      <b>Konyo bankokuzenzu 坤輿万国全図</b><br>
+      In the Caucasus there is a Land of Women. This country also has male inhabitants; but if too many are born, they
+      are put to death.<br><br>
+
+      <b>Theatrum Orbus Terrarum, first edition of Abraham Ortelius’s 1570 world atlas</b><br>
+      There are no men here, only women. Men who come here never return because the women kill them.<br><br>
+    </p>
+    <p style="font-size: larger;">
+      [Official/Buddhist/Mythic Compilation]
+    <p>
+      <b>Keiran shūyōshū 渓嵐拾葉集</b><br>
+      The Great Country of Japan is the island that was formed when the brine from the heavenly spear fell into the seas
+      of Jambudvīpa (Nanbudai 南浮提). The country of Japan is Cāmara (Shamara 遮末羅), one of the two islands south of
+      Jambudvīpa. According to the Abhidharmakośa, this island is inhabited by rākṣasī (rasetsuba 羅刹婆) but in truth the
+      rākṣasī are [Amaterasu, the deity of] the Ise shrine, who is the manifestation (suijaku 垂迹) of Dainichi.<br><br>
+
+      <b>Shanhaijing 山海経 (Classic of mountains and seas)</b><br>
+      The Land of Women lies north of the Land of Shaman Zian. Two women dwell here in the water, which surrounds
+      them.<br><br>
+
+      <b>Haedong cheguk ki 海東諸国紀</b><br>
+      It is 70 ri from here to the capital and 70 ri to Rasetsukoku 此国都七十里至羅刹国七十里. The Land of Women, which lies between
+      Rasetsukoku and the mainland, is located with a similar degree of specificity: distance to Mutsu 13 ri
+      距陸奥十三里<br><br>
+
+      <b>Sancai tuhui 三才圖會</b><br>
+      The Land of Women is in the southeastern seas. The water flows to the east. Lotus flowers one foot across bloom
+      once a year and the peaches have stones two feet long. Long ago a ship drifted there and the women gathered
+      together and carried the ship off. The sailors were all close to death. But a clever man among them stole the boat
+      back at night and they were able to escape. The women conceive children by exposing their genitals to the south
+      wind. According to others, the women become pregnant by looking at their reflection in a well.<br><br>
+    </p>
+    <p style="font-size: larger;">
+      [Popular Literature]
+    <p>
+    <p>
+      <b>Ikoku monogatari 異国物語</b><br>
+      This land is in the northeastern seas. There are no boys in this land. When young boys come here they never
+      return. The women look at their reflection in a well and immediately become pregnant. They give birth only to
+      girls.<br><br>
+
+      <b>Fūryū Shidōken den 風流志道軒傳</b><br>
+      It was the Island of Women, a country inhabited only by women. There wasn’t a single man on the entire island.
+      When the women here wanted to have a child, they opened their robes and faced in the direction of Japan. Wind blew
+      on their bodies and made them pregnant, and later they bore girl babies. They had a ruler, but it was always a
+      woman.<br><br>
+    </p>
+    <h1>To be documented...</h1>
+    <p>Konjaku monogatari shū 今昔物語集 (1120?) <br><br>
+      Heike nyōgo no shima 平家女護島(1719) by Chikamatsu Monzaemon 近松門左衛門<br><br>
+      Nishiki no ura 錦之裏(1791) by Santō Kyōden山東京伝<br><br>
+      Chinsetsu yumiharizuki 椿説弓張月(1807-1811) by Takizawa Bakin 滝沢馬琴<br><br>
+      Nyōgo no shima engi no irifune 女護島延喜入船(1848-1858) by Utagawa Kunimaro 歌川国麿<br><br>
+      Koi no minato nyōgo no shimada 恋湊女護生娘 (1823) by Tsubutegawa Nanryō 礫川南嶺</p>
+
+  </div>
+  <div id="research" class="content-section">
+    <h1>Research</h1>
+    <div class="grid-container">
+      <div class="grid-item" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h2>Extended Readings</h2>
+        · Daston, Lorraine, and Katharine Park. Wonders and the Order of Nature, 1150-1750. New York: Zone Books, 1998.
+        <br><br>
+        · Wigen, Kären, Fumiko Sugimoto, and Cary Karacas, eds. Cartographic Japan: A History in Maps. Chicago: The
+        University of Chicago Press, 2016.<br><br>
+        · Li, Michelle Ilene Osterfeld. Ambiguous Bodies: Reading the Grotesque in Japanese Setsuwa Tales.Stanford,
+        Calif: Stanford General, 2009.
+
+      </div>
+      <div class="grid-item" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h2>GIS Resources</h2>
+        · UBC Library. «Japanese Maps of the Tokugawa Era - UBC Library Open Collections.» Accessed May 31, 2019.
+        <a href="https://open.library.ubc.ca/collections/tokugawa">https://open.library.ubc.ca/collections/tokugawa</a> <br><br>
+        · 人文学オープンデータ共同利用センター (Center for Open Data in the Humanities). «江戸マップβ版». Accessed Nov 29, 2023.
+        <a href="http://codh.rois.ac.jp/edo-maps/">http://codh.rois.ac.jp/edo-maps/</a> <br><br>
+        · Kohei Otsuka. «Maplat». Accessed Nov 29, 2023. <a href="https://github.com/code4history/Maplat/wiki">https://github.com/code4history/Maplat/wiki</a>
+      </div>
+      <div class="grid-item" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h2>Reference</h2>
+        · Moerman, D. Max. “Demonology and Eroticism: Islands of Women in the Japanese Buddhist Imagination.” Japanese
+        journal of religious studies 36, no. 2 (2009): 351–380.<br><br>
+        · Yonemoto, Marcia. Mapping Early Modern Japan: Space, Place, and Culture in the Tokugawa Period
+        (1603-1868).Berkeley; University of California Press, 2003.<br><br>
+        · Johnson, Regine Diane. “Fantastic Voyage: Refractions of the Real, Re-Visions of the Imagined in Hiraga
+        Gennai’s ‘Furyu Shidoken Den.’” ProQuest Dissertations Publishing, 1989.
+
+      </div>
+      <div class="grid-item" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h2>Acknowledgments</h2>
+        · I want to express my heartfelt gratitude to <a href="https://classics.uchicago.edu/people/georgios-tsolakis">Dr. Tsolakis</a> for his devoted teaching and support---taking his course makes me feel I'm on the right track of Digital Humanities study. <br><br>
+        · Special thanks to D. Max Moerman, whose paper greatly inspired and facilitated my project building, but who never replied me even a single email. (I'd better not link to his profile page)
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all 
+      document.querySelectorAll(".content-section").forEach(function (section) {
+        section.style.display = "none";
+      });
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = "block";
+    }
+
+    // Show the about section
+    window.onload = function () {
+      showSection("about");
+    };
+
+    // Gallery again
+
+    var images = [
+      {
+        url: "1305-maps of japan.jpg",
+        title: "Gyōkizu 行基図(1305)",
+        description: "Name of this map attributes to the legendary Nara-period monk, and belongs to the Shingon-Ritsu temple Shōmyōji 称名寺. However, it is incomplete."
+      },
+      {
+        url: "1402-mapes of japan.jpg",
+        title: "Five Buddhist Maps(1402)",
+        description: "An inscription attributes the map’s origin to the bodhisattva Gyōki and contains the earliest example of a passage that is to be found on nearly all later maps of this style."
+      },
+      {
+        url: "1471-Haedong.jpg",
+        title: "Honil kangni yoktae kukto chi to 混一疆理歴代国都之図(1471)",
+        description: "The earliest korean map, also named as Kangnido 疆理図. It is firstly completed in 1402, and this one is its oldest copy."
+      },
+      {
+        url: "1662-Fosokoku.jpg",
+        title: "Fusōkoku no zu 扶桑国之図(1662)",
+        description: "Rasetsukoku and its gloss appear largely in kana"
+      },
+      {
+        url: "1686-Nihon.jpg",
+        title: "Nihon daihendō zu(1686)",
+        description: "Rasetsukoku (rendered here Rarestukou 羅列国) is depicted as a partial coastline due south of Kii Province with the same protruding peninsula that first appeared in the Fusōkoku no zu."
+      },
+      {
+        url: "1691-nihonkaisan.jpg",
+        title: "Nihon kaisan chōrikuzu 日本海山潮陸図(1691)",
+        description: "Map of the seas and lands of Japan"
+      }, 
+      {
+        url: "1740.ca.AltasNovus.jpg",
+        title: "Atlas Novus(ca.1740)",
+        description: "Published by Matthaeus Seutter (1678–1757). He proclaims that this map originated from Japan, however its location of the Island of Women is closer to a Dutch source, Le Japaon divisé en soissante et six provences(1715) by Adrien Reland."
+      },
+      {
+        url: "1741-Yamato.jpg",
+        title: "Yamato setsuyōshū shikkai bukuro 倭節用集悉改袋(1741)",
+        description: "The Island of Women continued to define the southern boundary of Japan, even on the increasingly standardized maps of the country published in popular household encyclopedias."
+      },
+      {
+        url: "1761-Daifuku.jpg",
+        title: "Daifuku setsuyōshū 大福節用集(1761)",
+        description: "Ditto"
+      },
+      {
+        url: "1789-kashiragaki.jpg",
+        title: "Kashiragaki zōho kinmo zui taisei 頭書増補訓蒙圖彙大成(1789)",
+        description: "The familiar landmass is here labeled, in both kana and kanji, not Rasetsukoku but Nyōgonoshima."
+      },
+    ];
+    var currentIndex = 0;
+
+    function shiftImage(direction) {
+      var galleryImage = document.getElementById("gallery-image");
+      var imageTitle = document.getElementById("image-title");
+      var imageDescription = document.getElementById("image-description");
+
+      // Remove existing animations
+      galleryImage.classList.remove("slide-in-from-left", "slide-in-from-right", "slide-out-to-left", "slide-out-to-right");
+
+      // Determine the new index
+      currentIndex += direction;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      } else if (currentIndex > images.length - 1) {
+        currentIndex = 0;
+      }
+
+      var newImage = images[currentIndex];
+      // Apply the correct animation class based on direction
+      if (direction === 1) {
+        galleryImage.classList.add("slide-out-to-left");
+        setTimeout(function () {
+          galleryImage.src = newImage.url;
+          imageTitle.textContent = newImage.title;
+          imageDescription.textContent = newImage.description;
+          galleryImage.classList.add("slide-in-from-right");
+        }, 500);
+      } else {
+        galleryImage.classList.add("slide-out-to-right");
+        setTimeout(function () {
+          galleryImage.src = newImage.url;
+          imageTitle.textContent = newImage.title;
+          imageDescription.textContent = newImage.description;
+          galleryImage.classList.add("slide-in-from-left");
+        }, 500);
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
